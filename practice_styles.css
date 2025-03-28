@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Color Variables */
+:root {
+    --deep-navy-blue: #1B263B;
+    --beige: #F5F5DC;
+    --maroon: #85144b;
+    --gray: #AAAAAA;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--deep-navy-blue);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--beige);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--beige);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--maroon);
+}
+
+/* Home Section */
+.home-section {
+    background-color: var(--beige);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: var(--deep-navy-blue);
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: var(--gray);
+    max-width: 500px;
+}
+
+.profile-pic img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid var(--maroon);
+}
+
+/* Blog Highlights */
+.blog-highlights {
+    margin: 4rem auto;
+    max-width: 1200px;
+}
+
+.blog-highlights h2 {
+    font-size: 2rem;
+    color: var(--deep-navy-blue);
+    margin-bottom: 2rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item h3 {
+    color: var(--maroon);
+    margin-bottom: 0.5rem;
+}
+
+.blog-item p {
+    color: var(--gray);
+}
+
+.blog-item a {
+    color: var(--deep-navy-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-item a:hover {
+    color: var(--maroon);
+}
