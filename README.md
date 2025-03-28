@@ -32,8 +32,6 @@ This is a simple personal website for **S. M. Mehedi Hasan**, built using HTML a
 - Improve responsiveness for mobile devices  
 - Include more sections and animations  
 
-## 📄 License  
-This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 👨‍💻 Developed by **S. M. Mehedi Hasan**  
